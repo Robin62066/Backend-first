@@ -2,15 +2,22 @@
 //upar vale dotenv se bhi kam chal sakta  hai but best code consistency ke lie import krna hai
 // import cotenv from "dotenv"
 
-import dotenv from "dotenv"
-import connectDB from "./db/index.js"
+import dotenv from "dotenv";
+import connectDB from "./db/index.js";
 
 dotenv.config({
-    path: "./env"
-})
+  path: "./env",
+});
 
 connectDB()
-
+  .then(() => {
+    app.listen(process.env.PORT || 8000, () => {
+      console.log(`Server is running at port : ${process.env.PORT}`);
+    });
+  })
+  .catch((err) => {
+    console.log("MOngo db connection Faild !!!", err);
+  });
 
 /*
 
