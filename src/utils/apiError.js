@@ -10,7 +10,7 @@
         this.data = null
         this.message = message
         this.success = false
-        this.errors = this.errors
+        this.errors = errors
 //Proper error gets hereeproduction me hatate h esko
         if(stack){
             this.stack = stack

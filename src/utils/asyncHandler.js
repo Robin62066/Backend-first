@@ -14,7 +14,7 @@ export {asyncHandler}
 // const asyncHandler = (fun) =>async()=>{}
 
     //this is try catch code async await code
-// const asyncHandler = (fn) =>async(req, res, next)=>{
+// const asyncHandler = (fn) => async(req, res, next)=>{
 //     try {
 //     await fn(req,res,next)
         
